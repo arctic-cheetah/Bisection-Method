@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "/home/london/Downloads/SymJava-master/release/SymJava.jar",
+        "/home/london/Downloads/javac8-oo-plugin-0.5.jar"
+    ]
+}

@@ -1,0 +1,1 @@
+The Bisection method to find a root of any continuous function
