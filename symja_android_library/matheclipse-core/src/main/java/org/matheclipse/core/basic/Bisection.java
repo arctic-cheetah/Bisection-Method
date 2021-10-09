@@ -2,23 +2,19 @@ package org.matheclipse.core.basic;
 
 
 import org.matheclipse.core.eval.ExprEvaluator;
-import org.matheclipse.core.expression.F;
-import org.matheclipse.core.interfaces.IAST;
 import org.matheclipse.core.interfaces.IExpr;
-import org.matheclipse.core.interfaces.ISymbol;
 import java.util.*;
 
 //The bisection method using the Java Library SymLab
 
 public class Bisection {
-   static double precision = 1E-10;
+   static double PRECISION = 1E-10;
 
    public static void main(String[] args) {
       ExprEvaluator util = new ExprEvaluator(false, (short) 100);
       Scanner scanf = new Scanner(System.in);
       
       //Fetch a function in terms of x from the user
-      ISymbol x = F.Dummy("x");
 
       System.out.print("Enter a continuous function f(x): ");
       String f = scanf.nextLine();
@@ -54,6 +50,7 @@ public class Bisection {
       //Number of iterations
       int MAX = 100;
 
+      //Find the root between [a,b]
       double root = B_method(f, a, b, TOL, MAX, util);
       util.eval("x="+root);
 
@@ -66,7 +63,6 @@ public class Bisection {
 
     public static double B_method(String f, String a, String b, double TOL, int MAX, ExprEvaluator util) {
       
-
       int n = 0;
       Double c = 0.0;
       Double f_c = 0.0;
@@ -75,20 +71,21 @@ public class Bisection {
       while (n <= MAX) {
         //Get the midpoint
         c = (Double.parseDouble(a) + Double.parseDouble(b)) / 2;
-        //Check f(c)
+        //Evaluate f(c)
         util.eval("x="+c);
         f_c = util.eval(f).toDoubleDefault();
-        //
-        if ( (-precision < f_c && f_c < precision) || ( ((Double.parseDouble(b) - Double.parseDouble(a)) / 2) < TOL) )
+        
+        //Check if accuracy is met or answer is within tolerance
+        if ( (-PRECISION < f_c && f_c < PRECISION) || ( ((Double.parseDouble(b) - Double.parseDouble(a)) / 2) < TOL) )
         {
           return c;
         }
         n +=1;
         System.out.println(n+": "+c);
 
+        //Evaluate f(a)
         util.eval("x="+a);
         f_a = util.eval(f).toDoubleDefault();
-
         //Check if the sign of f(c) is the same as f(a).
         if ( (f_a > 0 && f_c > 0) || (f_a < 0 && f_c < 0) ) {
           a = c.toString();
