@@ -1,6 +1,8 @@
 import static symjava.symbolic.Symbol.*;
+
 import symjava.bytecode.BytecodeFunc;
-import symjava.symbolic.*;
+import symjava.symbolic.Expr;
+import symjava.symbolic.Func;
 
 //A program to implement the bisection method
 //No error checking for undefined values
@@ -11,17 +13,24 @@ public class App {
 
 
 		//Enter your function below
-		//Below means: 5x^2 - x - 1
-        Expr expr = x.multiply(x).multiply(5).subtract(x).subtract(1); 
+		//Below means: x^3 + 10*x^2 + x + 5
+        Expr term1 = x.multiply(x).multiply(x); //x^3 
+		Expr term2 = x.multiply(x).multiply(10);//10*x^2
+		Expr term3 = x.add(5);					//5 + x
+		Expr expr = term1.add(term2).add(term3);
+
 		Func f = new Func("f", expr);
 		BytecodeFunc F = f.toBytecodeFunc();
 		
 
 		//End points:
-		double a = -1.0;
+		//Assume [a,b] that is, a > b.
+		double a = 3;
 		double b = 0;
+		//Error checking
+
 		//Tolerance: (The accuracy of the root)
-		double TOL = 1E-4;
+		double TOL = 1E-8;
 		int MAX = 100;
 		
 
@@ -47,6 +56,7 @@ public class App {
 
 	//Bisection method
 	//Parameters: function, end points (a,b), Tolerance and Max iterations
+	//Assumes a < b:
 	private static double bisection (BytecodeFunc F, double a, double b, double TOL, int MAX) {
 		int n = 0;
 		double c = 0;
@@ -54,13 +64,13 @@ public class App {
 			c = (a + b)/2;
 
 			//exit if f(c) == 0 or (b-a)/2 < TOL
-			if (F.apply(c) == 0 || (b-a)/2 < TOL) {
+			if (F.apply(c) == 0 || Math.abs((b-a)/2) < TOL) {
 				return c;
 			}
-			System.out.println(c);
+			System.out.println(n + ": c = " + c );
 			n +=1;
 			//Check the sign of f(c) to assign a new boundary 
-			if (F.apply(c) > 0 && F.apply(a) > 0) {
+			if ((F.apply(c) > 0 && F.apply(a) > 0) || (F.apply(c) < 0 && F.apply(a) < 0)) {
 				a = c;
 			}
 			else {
