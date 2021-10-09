@@ -1,0 +1,16 @@
+# build artifacts
+bin/
+build/
+target/
+
+# Eclipse configuration files
+.project
+.classpath
+.settings/
+
+#misc
+/js
+/matheclipse-aar/
+/dump/
+proguard.map
+/lib/

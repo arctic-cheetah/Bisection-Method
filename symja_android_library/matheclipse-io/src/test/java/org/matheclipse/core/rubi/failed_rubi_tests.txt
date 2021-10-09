@@ -1,0 +1,10 @@
+Exponentials
+HyperbolicFunctions
+IndependentTestSuites
+InverseHyperbolicFunctions
+InverseTrigFunctions
+Logarithms
+SpecialFunctions
+TrigFunctions
+AlgebraicFunctions
+test0276 - Integrate[(1 + x/a)^(n/2)/(x^2*(1 - x/a)^(n/2)), x] 

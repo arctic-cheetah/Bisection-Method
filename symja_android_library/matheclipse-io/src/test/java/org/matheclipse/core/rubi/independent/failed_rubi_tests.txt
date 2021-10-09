@@ -1,0 +1,531 @@
+Charlwood
+test12 - Integrate[ArcTan[x+Sqrt[1-x^2]], x]
+test13 - Integrate[x*ArcTan[x+Sqrt[1-x^2]]/Sqrt[1-x^2], x]
+test14 - Integrate[ArcSin[x]/(1+Sqrt[1-x^2]), x]
+test26 - Integrate[x*Log[x+Sqrt[1-x^2]]/Sqrt[1-x^2], x]
+test45 - Integrate[Sqrt[Sqrt[Sec[x]+1]-Sqrt[Sec[x]+(-1)*1]], x]
+test3 - Integrate[ArcSin[Sqrt[x+1]-Sqrt[x]], x]
+test4 - Integrate[Log[1+x*Sqrt[1+x^2]], x]
+test5 - Integrate[Cos[x]^2/Sqrt[Cos[x]^4+Cos[x]^2+1], x]
+PossibleZeroQ[
+(-Sec[x]^2*Tan[x])/Sqrt[1+Tan[x]^4]-Tan[x]*Sqrt[1+Tan[x]^4]+3*Sec[x]^2*Tan[x]^3*((-Sqrt[
+2]*ArcTanh[Sqrt[1+Tan[x]^4]/Sqrt[2]])/(1+Tan[x]^4)^(3/2)+1/(1+Tan[x]^4))*Sqrt[1+Tan[x]^
+4]+1/2*((6*Sqrt[2]*ArcTanh[Sqrt[1+Tan[x]^4]/Sqrt[2]]*Sec[x]^2*Tan[x]^3)/(1+Tan[x]^
+4)^(5/2)+(-4*Sec[x]^2*Tan[x]^3)/(1+Tan[x]^4)^2+(-2*Sec[x]^2*Tan[x]^3)/((1+1/2*(
+-1-Tan[x]^4))*(1+Tan[x]^4)^2))*(1+Tan[x]^4)^(3/2)+((-2*Sqrt[2]*Sec[x]^2*Tan[x]^5)/(
+1+Tan[x]^4)^(3/2)+(2*Sqrt[2]*Sec[x]^2*Tan[x])/Sqrt[1+Tan[x]^4])/(Sqrt[2]*(1+(-2*Tan[x]^
+4)/(1+Tan[x]^4))) 
+]
+test6 - Integrate[Tan[x]*Sqrt[1+Tan[x]^4], x]
+PossibleZeroQ[
+-Sin[x]/(2*Sqrt[-1+Sec[x]])+((Cos[x]+ArcTanh[Sqrt[1-Sec[x]]]/Sqrt[1-Sec[x]])*Sec[x]*Tan[x])/(
+4*Sqrt[-1+Sec[x]])+1/2*Sqrt[-1+Sec[x]]*(-Sin[x]-Tan[x]/(2*(1-Sec[x]))+(ArcTanh[Sqrt[
+1-Sec[x]]]*Sec[x]*Tan[x])/(2*(1-Sec[x])^(3/2))) 
+]
+test9 - Integrate[Sin[x]*ArcTan[Sqrt[Sec[x]+(-1)*1]], x]
+
+
+Timofeev
+Warning: Unrecognized expression for expansion -2*x*PolynomialQuotient[(2+x^2+x^3)/x,1-x^2,x]-x*PolynomialRemainder[2/x+x+x^2,1-x^
+2,x]
+test105 - Integrate[(x^3+x^2+2)/(x*(x^2+(-1)*1)^2), x]
+Warning: Unrecognized expression for expansion -3*x*PolynomialQuotient[(1+x^2)/x,1+x^3,x]-2*x*PolynomialRemainder[1/x+x,1+x^3,x]
+test181 - Integrate[(x^2+1)/(x*(x^3+1)^2), x]
+Warning: Unrecognized expression for expansion 3*(1+x)^2*PolynomialQuotient[(-2-3*x+x^2)/(1+x)^2,1+x+x^2,x]+2*(1+x)^2*PolynomialRemainder[
+-2/(1+2*x+x^2)+(-3*x)/(1+2*x+x^2)+x^2/(1+2*x+x^2),1+x+x^2,x]
+test182 - Integrate[(x^2-3*x+(-1)*2)/((x+1)^2*(x^2+x+1)^2), x]
+test191 - Integrate[(b1+c1*x)*(a+2*b*x+c*x^2)^3, x]
+test192 - Integrate[(b1+c1*x)*(a+2*b*x+c*x^2)^4, x]
+PossibleZeroQ[
+(c1*(2*b+2*c*x)*(a+2*b*x+c*x^2)^n)/(2*c)-(b1+c1*x)*(a+2*b*x+c*x^2)^n+((-b1*c+b*c1)*(
+-1-n)*n*(a+2*b*x+c*x^2)^(1+n)*Hypergeometric2F1[1-n,2+n,3+n,(b+Sqrt[b^2-a*c]+c*x)/(
+2*Sqrt[b^2-a*c])])/(2^(1-n)*(b^2-a*c)*(1+n)*(2+n)*(-(b-Sqrt[b^2-a*c]+c*x)/Sqrt[b^
+2-a*c])^(1+n))+(2^n*(-b1*c+b*c1)*(2*b+2*c*x)*(a+2*b*x+c*x^2)^n*Hypergeometric2F1[-n,
+1+n,2+n,(b+Sqrt[b^2-a*c]+c*x)/(2*Sqrt[b^2-a*c])])/(c*Sqrt[b^2-a*c]*(-(b-Sqrt[b^2-a*c]+c*x)/Sqrt[b^
+2-a*c])^(1+n))+(2^n*(-b1*c+b*c1)*(a+2*b*x+c*x^2)^(1+n)*Hypergeometric2F1[-n,1+n,
+2+n,(b+Sqrt[b^2-a*c]+c*x)/(2*Sqrt[b^2-a*c])])/((b^2-a*c)*(-(b-Sqrt[b^2-a*c]+c*x)/Sqrt[b^
+2-a*c])^(2+n)) 
+]
+test193 - Integrate[(b1+c1*x)*(a+2*b*x+c*x^2)^n, x]
+PossibleZeroQ[
+-5/12*x*Sqrt[1+x]*(1-x^2)^(1/4)-3/2*(x*(1-x^2)^(5/4))/(1-x)^(3/2)+(1-x^2)^(5/4)/(
+12*Sqrt[1+x])+(1-x^2)^(9/4)/(2*(1-x)^(5/2))+(-x^2*Sqrt[1+x]*(1-x^2)^(1/4))/(Sqrt[
+1-x]*(Sqrt[1-x]-Sqrt[1+x]))-2^(1/4)*(1-x)^(3/4)*Hypergeometric2F1[-5/4,7/4,11/4,
+1/2*(1-x)]+(-(1-x)^(1/4)*Hypergeometric2F1[-3/4,5/4,9/4,1/2*(1-x)])/(6*2^(1/4))+
+5/11*((1-x)^(7/4)*Hypergeometric2F1[-1/4,11/4,15/4,1/2*(1-x)])/2^(3/4)+((1-x)^(5/
+4)*Hypergeometric2F1[1/4,9/4,13/4,1/2*(1-x)])/(36*2^(1/4)) 
+]
+test221 - Integrate[x^2*(1-x^2)^(1/4)*Sqrt[1+x]/(Sqrt[1-x]*(Sqrt[1-x]-Sqrt[1+x])), x]
+test222 - Integrate[x*(1+x)^(2/3)*Sqrt[1-x]/(Sqrt[1+x]*(1-x)^(2/3)-(1+x)^(1/3)*(1-x)^(5/6)), x]
+PossibleZeroQ[
+-x^6/(6*Sqrt[5-x^2])-1/6*x^4*Sqrt[5-x^2]+125/6*(x^6*Hypergeometric2F1[5/2,3,7/2,-x^
+2/(5-x^2)])/(5-x^2)^(7/2)+125/6*(x^4*Hypergeometric2F1[5/2,3,7/2,-x^2/(5-x^2)])/(
+5-x^2)^(5/2)+125/14*(x^5*((-2*x^3)/(5-x^2)^2+(-2*x)/(5-x^2))*Hypergeometric2F1[7/
+2,4,9/2,-x^2/(5-x^2)])/(5-x^2)^(5/2) 
+]
+test250 - Integrate[x^4*Sqrt[5-x^2], x]
+test259 - Integrate[(4*x-Sqrt[1-x^2])/(5+Sqrt[1-x^2]), x]
+test260 - Integrate[(2-Sqrt[x^2+1])*x^2/(Sqrt[x^2+1]*((x^2+1)^(3/2)-x^3+1)), x]
+test287 - Integrate[1/(1+Sqrt[x^2+2*x+2]), x]
+test289 - Integrate[x^2/(2*x+1+2*Sqrt[1+x+x^2]), x]
+test290 - Integrate[(Sqrt[1+x+x^2]-3*x)/(Sqrt[1+x+x^2]+(-1)*1), x]
+test291 - Integrate[(x+1)/(Sqrt[x^2+2*x+4]-Sqrt[x^2+x+1]), x]
+PossibleZeroQ[
+x^10/(2*(3+4*x^4)^(3/4))-1/8*x^6*(3+4*x^4)^(1/4)-9/2*(x^10*Hypergeometric2F1[7/4,
+2,11/4,(4*x^4)/(3+4*x^4)])/(3+4*x^4)^(11/4)+9/8*(x^6*Hypergeometric2F1[7/4,2,11/
+4,(4*x^4)/(3+4*x^4)])/(3+4*x^4)^(7/4)+9/44*(x^7*((-64*x^7)/(3+4*x^4)^2+(16*x^3)/(
+3+4*x^4))*Hypergeometric2F1[11/4,3,15/4,(4*x^4)/(3+4*x^4)])/(3+4*x^4)^(7/4) 
+]
+test305 - Integrate[x^6*(3+4*x^4)^(1/4), x]
+PossibleZeroQ[
+3/8-3/4*Cos[Pi/4+x/2]^4-3/4*Cos[Pi/4+x/2]^2*Sin[Pi/4+x/2]^2-3/8*Sin[x] 
+]
+test335 - Integrate[Cos[Pi/4+x/2]^4, x]
+test363 - Integrate[(a*Sec[x]^2-Sin[2*x])^2*(Cot[x]^3+1), x]
+PossibleZeroQ[
+227/32-3*Cos[x]-99/32*Cos[x]^2+(-4+3*Cos[x])*(1-Sin[x]/2)^4-10*Sin[x]+6*Cos[x]*Sin[x]+
+2*Cos[x]^2*Sin[x]+99/32*Sin[x]^2-9/2*Cos[x]*Sin[x]^2-3/16*Cos[x]^2*Sin[x]^2+3/2*Cos[x]*Sin[x]^
+3+Sin[x]^4/16-3/16*Cos[x]*Sin[x]^4 
+]
+test364 - Integrate[(1-Sin[x]/2)^4*(4-3*Cos[x]), x]
+PossibleZeroQ[
+-1/(2*Sqrt[3])+1/2*Cot[x]*Sec[x]^2+(((1-2*Cos[x]^2)*(-2*Cos[x]^2+2*Sin[x]^2))/(2+Sqrt[
+3]+2*Cos[x]*Sin[x])^2+(4*Cos[x]*Sin[x])/(2+Sqrt[3]+2*Cos[x]*Sin[x]))/(2*Sqrt[3]*(
+1+(1-2*Cos[x]^2)^2/(2+Sqrt[3]+2*Cos[x]*Sin[x])^2))-Cot[x]/(2+Sin[2*x])+(-Sec[x]^
+2-2*Sec[x]^2*Tan[x])/(4*(1+Tan[x]+Tan[x]^2)) 
+]
+test373 - Integrate[Cos[x]/(Sin[x]*(2+Sin[2*x])), x]
+PossibleZeroQ[
+1/(2*Sqrt[3])-1/(4+Sqrt[3]*Cos[x]+Sin[x])+((Sqrt[3]*((4-Sqrt[3])*Cos[x]+(3-4*Sqrt[
+3])*Sin[x])*(3*Cos[x]-4*Sqrt[3]*Cos[x]+12*Sin[x]-3*Sqrt[3]*Sin[x]))/(2*(6+5*Sqrt[
+3])+12*Cos[x]-3*Sqrt[3]*Cos[x]-3*Sin[x]+4*Sqrt[3]*Sin[x])^2+(Sqrt[3]*((3-4*Sqrt[
+3])*Cos[x]+(-4+Sqrt[3])*Sin[x]))/(2*(6+5*Sqrt[3])+12*Cos[x]-3*Sqrt[3]*Cos[x]-3*Sin[x]+
+4*Sqrt[3]*Sin[x]))/(Sqrt[3]*(1+(3*((4-Sqrt[3])*Cos[x]+(3-4*Sqrt[3])*Sin[x])^2)/(
+2*(6+5*Sqrt[3])+12*Cos[x]-3*Sqrt[3]*Cos[x]-3*Sin[x]+4*Sqrt[3]*Sin[x])^2)) 
+]
+test376 - Integrate[1/(4+Sqrt[3]*Cos[x]+Sin[x]), x]
+test379 - Integrate[1/(4+Tan[x]+4*Cot[x]), x]
+PossibleZeroQ[
+-Sqrt[Tan[x]]+Hypergeometric2F1[3/4,1,7/4,-Tan[x]^2]*Sec[x]^2*Sqrt[Tan[x]]-4/7*Hypergeometric2F1[
+7/4,2,11/4,-Tan[x]^2]*Sec[x]^2*Tan[x]^(5/2) 
+]
+test397 - Integrate[Sqrt[Tan[x]], x]
+PossibleZeroQ[
+-1/Tan[5*x]^(1/3)+(Hypergeometric2F1[1/3,1,4/3,-Tan[5*x]^2]*Sec[5*x]^2)/Tan[5*x]^(
+1/3)-3/4*Hypergeometric2F1[4/3,2,7/3,-Tan[5*x]^2]*Sec[5*x]^2*Tan[5*x]^(5/3) 
+]
+test398 - Integrate[1/Tan[5*x]^(1/3), x]
+test401 - Integrate[Tan[x]/(Sqrt[Tan[x]]+(-1)*1)^2, x]
+PossibleZeroQ[
+(Hypergeometric2F1[7/4,2,11/4,-Tan[x]^2]*Sec[x]^2*Tan[x]*(4*Sin[x]^4+Sin[x]^2*Tan[x]^
+2))/(7*Sqrt[Sin[x]^4*Tan[x]])-Sqrt[Sin[x]^4*Tan[x]]+2/7*Hypergeometric2F1[7/4,2,
+11/4,-Tan[x]^2]*Sec[x]^4*Sqrt[Sin[x]^4*Tan[x]]+4/7*Hypergeometric2F1[7/4,2,11/4,-Tan[x]^
+2]*Sec[x]^2*Tan[x]^2*Sqrt[Sin[x]^4*Tan[x]]-8/11*Hypergeometric2F1[11/4,3,15/4,-Tan[x]^
+2]*Sec[x]^4*Tan[x]^2*Sqrt[Sin[x]^4*Tan[x]] 
+]
+test413 - Integrate[Sqrt[Sin[x]^5/Cos[x]], x]
+PossibleZeroQ[
+(Cos[x]*Sin[x]*(Cos[x]^4-3*Cos[x]^2*Sin[x]^2))/(Cos[x]^3*Sin[x])^(3/2)+(2*Cos[x]*Hypergeometric2F1[
+1/4,1,5/4,-Tan[x]^2]*Sin[x]*(-Cos[x]^4+3*Cos[x]^2*Sin[x]^2))/(Cos[x]^3*Sin[x])^(
+3/2)+(ArcSinh[Tan[x]]*(Cos[x]^4-3*Cos[x]^2*Sin[x]^2)*Sqrt[Cos[x]*Sin[x]])/(Sqrt[
+2]*Sqrt[Sec[x]^2]*(Cos[x]^3*Sin[x])^(3/2))+(-2*Cos[x]^2)/Sqrt[Cos[x]^3*Sin[x]]+(
+4*Cos[x]^2*Hypergeometric2F1[1/4,1,5/4,-Tan[x]^2])/Sqrt[Cos[x]^3*Sin[x]]+(2*Sin[x]^
+2)/Sqrt[Cos[x]^3*Sin[x]]+(-4*Hypergeometric2F1[1/4,1,5/4,-Tan[x]^2]*Sin[x]^2)/Sqrt[Cos[x]^
+3*Sin[x]]+(ArcSinh[Tan[x]]*(-Cos[x]^2+Sin[x]^2))/(Sqrt[2]*Sqrt[Sec[x]^2]*Sqrt[Cos[x]*Sin[x]]*Sqrt[Cos[x]^
+3*Sin[x]])+(-Cos[2*x]+Sqrt[Sin[2*x]])/Sqrt[Cos[x]^3*Sin[x]]+(Sqrt[2]*ArcSinh[Tan[x]]*Sqrt[Cos[x]*Sin[x]]*Tan[x])/(Sqrt[Sec[x]^
+2]*Sqrt[Cos[x]^3*Sin[x]])-8/5*(Hypergeometric2F1[5/4,2,9/4,-Tan[x]^2]*Tan[x]^2)/Sqrt[Cos[x]^
+3*Sin[x]]+(-Sqrt[2]*Sqrt[Sec[x]^2]*Sqrt[Cos[x]*Sin[x]])/(Sqrt[Cos[x]^3*Sin[x]]*Sqrt[
+1+Tan[x]^2]) 
+]
+test416 - Integrate[(Cos[2*x]-Sqrt[Sin[2*x]])/Sqrt[Sin[x]*Cos[x]^3], x]
+test417 - Integrate[(Sqrt[Sin[x]^3*Cos[x]]-2*Sin[2*x])/(Sqrt[Tan[x]]-Sqrt[Sin[x]*Cos[x]^3]), x] 
+PossibleZeroQ[
+3/2*(Cos[x]^2*Sin[x]^2*(Cos[x]^6-5*Cos[x]^4*Sin[x]^2))/(Cos[x]^5*Sin[x])^(5/3)+3/
+5*((Cos[x]^6-5*Cos[x]^4*Sin[x]^2)*Sin[x]^4)/(Cos[x]^5*Sin[x])^(5/3)-9/2*(Cos[x]^
+3*Sin[x])/(Cos[x]^5*Sin[x])^(2/3)+9/10*(Cos[x]*Sin[x]^3)/(Cos[x]^5*Sin[x])^(2/3)+(
+3*Tan[x]-(Sec[x]^6*Tan[x])^(1/3))/(Cos[x]^5*Sin[x])^(2/3)+(Cos[x]^4*Cot[x]^5*(1+
+3*Tan[x]^2+3*Tan[x]^4+Tan[x]^6)*(Sec[x]^2+9*Sec[x]^2*Tan[x]^2+15*Sec[x]^2*Tan[x]^
+4+7*Sec[x]^2*Tan[x]^6))/(8*(Cos[x]^5*Sin[x])^(2/3)*(Tan[x]+3*Tan[x]^3+3*Tan[x]^5+Tan[x]^
+7)^(2/3))+(Cos[x]^3*(Sec[x]^6)^(1/3)*Sin[x]^3*(Sec[x]^2+9*Sec[x]^2*Tan[x]^2+15*Sec[x]^
+2*Tan[x]^4+7*Sec[x]^2*Tan[x]^6))/(8*(Cos[x]^5*Sin[x])^(2/3)*(1+3*Tan[x]^2+3*Tan[x]^
+4+Tan[x]^6)^(1/3)*(Tan[x]+3*Tan[x]^3+3*Tan[x]^5+Tan[x]^7)^(2/3))+(Cos[x]*(Sec[x]^
+6)^(1/3)*Sin[x]^5*(Sec[x]^2+9*Sec[x]^2*Tan[x]^2+15*Sec[x]^2*Tan[x]^4+7*Sec[x]^2*Tan[x]^
+6))/(14*(Cos[x]^5*Sin[x])^(2/3)*(1+3*Tan[x]^2+3*Tan[x]^4+Tan[x]^6)^(1/3)*(Tan[x]+
+3*Tan[x]^3+3*Tan[x]^5+Tan[x]^7)^(2/3))+3/8*(Cos[x]^4*Cot[x]^5*(6*Sec[x]^2*Tan[x]+
+12*Sec[x]^2*Tan[x]^3+6*Sec[x]^2*Tan[x]^5)*(Tan[x]+3*Tan[x]^3+3*Tan[x]^5+Tan[x]^7)^(
+1/3))/(Cos[x]^5*Sin[x])^(2/3)+3/2*(Cos[x]^4*Cot[x]^4*(-1-3*Tan[x]^2-3*Tan[x]^4-Tan[x]^
+6)*(Tan[x]+3*Tan[x]^3+3*Tan[x]^5+Tan[x]^7)^(1/3))/(Cos[x]^5*Sin[x])^(2/3)+15/8*(Cos[x]^
+2*Cot[x]^6*(-1-3*Tan[x]^2-3*Tan[x]^4-Tan[x]^6)*(Tan[x]+3*Tan[x]^3+3*Tan[x]^5+Tan[x]^
+7)^(1/3))/(Cos[x]^5*Sin[x])^(2/3)+(Cos[x]^4*Cot[x]^5*(-Cos[x]^6+5*Cos[x]^4*Sin[x]^
+2)*(1+3*Tan[x]^2+3*Tan[x]^4+Tan[x]^6)*(Tan[x]+3*Tan[x]^3+3*Tan[x]^5+Tan[x]^7)^(1/
+3))/(4*(Cos[x]^5*Sin[x])^(5/3))+(Cos[x]^3*(Sec[x]^6)^(1/3)*Sin[x]^3*(-6*Sec[x]^2*Tan[x]
+-12*Sec[x]^2*Tan[x]^3-6*Sec[x]^2*Tan[x]^5)*(Tan[x]+3*Tan[x]^3+3*Tan[x]^5+Tan[x]^
+7)^(1/3))/(8*(Cos[x]^5*Sin[x])^(2/3)*(1+3*Tan[x]^2+3*Tan[x]^4+Tan[x]^6)^(4/3))+(Cos[x]*(Sec[x]^
+6)^(1/3)*Sin[x]^5*(-6*Sec[x]^2*Tan[x]-12*Sec[x]^2*Tan[x]^3-6*Sec[x]^2*Tan[x]^5)*(Tan[x]+
+3*Tan[x]^3+3*Tan[x]^5+Tan[x]^7)^(1/3))/(14*(Cos[x]^5*Sin[x])^(2/3)*(1+3*Tan[x]^2+
+3*Tan[x]^4+Tan[x]^6)^(4/3))+(Cos[x]^3*(Sec[x]^6)^(1/3)*(-Cos[x]^6+5*Cos[x]^4*Sin[x]^
+2)*Sin[x]^3*(Tan[x]+3*Tan[x]^3+3*Tan[x]^5+Tan[x]^7)^(1/3))/(4*(Cos[x]^5*Sin[x])^(
+5/3)*(1+3*Tan[x]^2+3*Tan[x]^4+Tan[x]^6)^(1/3))+(Cos[x]*(Sec[x]^6)^(1/3)*(-Cos[x]^
+6+5*Cos[x]^4*Sin[x]^2)*Sin[x]^5*(Tan[x]+3*Tan[x]^3+3*Tan[x]^5+Tan[x]^7)^(1/3))/(
+7*(Cos[x]^5*Sin[x])^(5/3)*(1+3*Tan[x]^2+3*Tan[x]^4+Tan[x]^6)^(1/3))+9/8*(Cos[x]^
+4*(Sec[x]^6)^(1/3)*Sin[x]^2*(Tan[x]+3*Tan[x]^3+3*Tan[x]^5+Tan[x]^7)^(1/3))/((Cos[x]^
+5*Sin[x])^(2/3)*(1+3*Tan[x]^2+3*Tan[x]^4+Tan[x]^6)^(1/3))+39/56*(Cos[x]^2*(Sec[x]^
+6)^(1/3)*Sin[x]^4*(Tan[x]+3*Tan[x]^3+3*Tan[x]^5+Tan[x]^7)^(1/3))/((Cos[x]^5*Sin[x])^(
+2/3)*(1+3*Tan[x]^2+3*Tan[x]^4+Tan[x]^6)^(1/3))+3/14*((Sec[x]^6)^(1/3)*Sin[x]^6*(Tan[x]+
+3*Tan[x]^3+3*Tan[x]^5+Tan[x]^7)^(1/3))/((Cos[x]^5*Sin[x])^(2/3)*(1+3*Tan[x]^2+3*Tan[x]^
+4+Tan[x]^6)^(1/3)) 
+]
+test418 - Integrate[((Sin[x]/Cos[x]^7)^(1/3)-3*Tan[x])/(Sin[x]*Cos[x]^5)^(2/3), x]
+PossibleZeroQ[
+5/16*Sin[x]/Sqrt[1+2*Cos[x]^2]-(1+2*Cos[x]^2)^(5/2)*Sin[x]+5/16*Sqrt[2+Cos[2*x]]*Sin[x]+
+5/24*(2+Cos[2*x])^(3/2)*Sin[x]+1/6*(2+Cos[2*x])^(5/2)*Sin[x]+5/16*(Cos[x]*Sin[2*x])/Sqrt[
+2+Cos[2*x]]+5/8*Cos[x]*Sqrt[2+Cos[2*x]]*Sin[2*x]+5/6*Cos[x]*(2+Cos[2*x])^(3/2)*Sin[
+2*x] 
+]
+test419 - Integrate[(2*Cos[x]^2+1)^(5/2)*Sin[x], x]
+PossibleZeroQ[
+(2*((-Cos[x]^2*Sin[x])/(-4-Cos[x]^2)^(3/2)-Sin[x]/Sqrt[-4-Cos[x]^2]))/(1+Cos[x]^
+2/(-4-Cos[x]^2))+((Sqrt[5]*Cos[x]^2*Sin[x])/(-4-Cos[x]^2)^(3/2)+(Sqrt[5]*Sin[x])/Sqrt[
+-4-Cos[x]^2])/(Sqrt[5]*(1+(5*Cos[x]^2)/(-4-Cos[x]^2)))+2/5*Cos[x]/Sqrt[-5+Sin[x]^
+2]+(2*Cos[x]*Sin[x])/Sqrt[-5+Sin[x]^2]+(Csc[x]^2*(2*Cos[x]^3*(-1+Sin[x])-Cos[2*x]*Sin[x]))/Sqrt[
+-5+Sin[x]^2]+(-2*ArcTanh[Sqrt[1-Sin[x]^2/5]]*Cos[x]*Sin[x])/(Sqrt[5]*Sqrt[5-Sin[x]^
+2]*Sqrt[-5+Sin[x]^2])-2/5*Cot[x]*Csc[x]*Sqrt[-5+Sin[x]^2]+(-2*ArcTanh[Sqrt[1-Sin[x]^
+2/5]]*Cos[x]*Sin[x]*Sqrt[-5+Sin[x]^2])/(Sqrt[5]*(5-Sin[x]^2)^(3/2))+(2*Cot[x]*Sqrt[
+-5+Sin[x]^2])/(Sqrt[5]*Sqrt[5-Sin[x]^2]*Sqrt[1-Sin[x]^2/5])+(-2*((-Cos[x]*Sin[x]^
+2)/(-5+Sin[x]^2)^(3/2)+Cos[x]/Sqrt[-5+Sin[x]^2]))/(1-Sin[x]^2/(-5+Sin[x]^2)) 
+]
+test426 - Integrate[(Sin[x]*Cos[2*x]-2*(Sin[x]+(-1)*1)*Cos[x]^3)/(Sin[x]^2*Sqrt[Sin[x]^2+(-1)*5]), x]
+test427 - Integrate[Cos[3*x]/(Sqrt[3*Cos[x]^2-Sin[x]^2]-Sqrt[8*Cos[x]^2+(-1)*1]), x]
+PossibleZeroQ[
+AppellF1[1/2,-3/2,2,3/2,2*Sin[x]^2,Sin[x]^2]*Cos[x]-Cos[2*x]^(3/2)*Sec[x]^3+Sin[x]*(
+2*Cos[x]*Sin[x]*Derivative[0,0,0,0,0,1][AppellF1][1/2,-3/2,2,3/2,2*Sin[x]^2,Sin[x]^
+2]+4*Cos[x]*Sin[x]*Derivative[0,0,0,0,1,0][AppellF1][1/2,-3/2,2,3/2,2*Sin[x]^2,Sin[x]^
+2]) 
+]
+test432 - Integrate[Cos[2*x]^(3/2)/Cos[x]^3, x]
+Power: Infinite expression 1/0 encountered.
+Power: Infinite expression 1/0 encountered.
+PossibleZeroQ[
+2/5*(Cos[x]^2*Sin[x])/Cos[2*x]^(3/2)-8/5*Sin[x]/Sqrt[Cos[2*x]]+(-6*Cos[x]^2*Sin[x])/Sqrt[Cos[
+2*x]]+12/5*(Cos[x]^2*Sin[x]^3)/Cos[2*x]^(5/2)+4/5*Sin[x]^3/Cos[2*x]^(3/2)-3/5*Sin[x]^
+5/Cos[2*x]^(5/2)+(-2*Cos[x]^3*Sin[2*x])/Cos[2*x]^(5/2)+8/5*(Cos[x]*Sin[2*x])/Cos[
+2*x]^(3/2)+(2*Cos[x]^3*Sin[2*x])/Cos[2*x]^(3/2)+Sqrt[2]*(-ArcTanh[(Sqrt[2]*Cos[x])/Sqrt[Cos[
+2*x]]]+(Sqrt[2]*Cos[x])/Sqrt[Cos[2*x]]+2*ArcTanh[(Sqrt[2]*Cos[x])/Sqrt[Cos[2*x]]]*Cos[x]^
+2*Sec[2*x])*Sin[2*x]-12/5*(Cos[x]*Sin[x]^2*Sin[2*x])/Cos[2*x]^(5/2)+(3*Cos[x]*Sin[x]^
+4*Sin[2*x])/Cos[2*x]^(7/2)+(Sin[x]^2*(-3*Sin[x]^3+Cos[x]*Sin[4*x]))/Cos[2*x]^(7/
+2)+(-Cos[2*x]*((-Sqrt[2]*Sin[x])/Sqrt[Cos[2*x]]-4*ArcTanh[(Sqrt[2]*Cos[x])/Sqrt[Cos[
+2*x]]]*Cos[x]*Sec[2*x]*Sin[x]+(Sqrt[2]*Cos[x]*Sin[2*x])/Cos[2*x]^(3/2)+(2*Cos[x]^
+2*Sec[2*x]*((-Sqrt[2]*Sin[x])/Sqrt[Cos[2*x]]+(Sqrt[2]*Cos[x]*Sin[2*x])/Cos[2*x]^(
+3/2)))/(1-2*Cos[x]^2*Sec[2*x])+((Sqrt[2]*Sin[x])/Sqrt[Cos[2*x]]+(-Sqrt[2]*Cos[x]*Sin[
+2*x])/Cos[2*x]^(3/2))/(1-2*Cos[x]^2*Sec[2*x])+4*ArcTanh[(Sqrt[2]*Cos[x])/Sqrt[Cos[
+2*x]]]*Cos[x]^2*Sec[2*x]*Tan[2*x]))/Sqrt[2] 
+]
+test433 - Integrate[(3*Sin[x]^3-Cos[x]*Sin[4*x])/(Csc[x]^2*Cos[2*x]^(7/2)), x]
+PossibleZeroQ[
+-(4-5*Sec[x]^2)^(3/2)+(5*AppellF1[1/2,-3/2,1,3/2,-Tan[x]^2,-5*Tan[x]^2]*Sec[x]^2*Tan[x]^
+2*Sqrt[-1-5*Tan[x]^2])/(1+5*Tan[x]^2)^(3/2)+(5*AppellF1[1/2,-3/2,1,3/2,-Tan[x]^2,
+-5*Tan[x]^2]*Sec[x]^2*Tan[x]^2)/(Sqrt[-1-5*Tan[x]^2]*Sqrt[1+5*Tan[x]^2])+(-AppellF1[
+1/2,-3/2,1,3/2,-Tan[x]^2,-5*Tan[x]^2]*Sec[x]^2*Sqrt[-1-5*Tan[x]^2])/Sqrt[1+5*Tan[x]^
+2]+(Tan[x]*Sqrt[-1-5*Tan[x]^2]*(10*Sec[x]^2*Tan[x]*Derivative[0,0,0,0,0,1][AppellF1][
+1/2,-3/2,1,3/2,-Tan[x]^2,-5*Tan[x]^2]+2*Sec[x]^2*Tan[x]*Derivative[0,0,0,0,1,0][AppellF1][
+1/2,-3/2,1,3/2,-Tan[x]^2,-5*Tan[x]^2]))/Sqrt[1+5*Tan[x]^2] 
+]
+test434 - Integrate[(4-5*Sec[x]^2)^(3/2), x]
+PossibleZeroQ[
+-2*AppellF1[-1/2,1,3/2,1/2,-Tan[x]^2,-5*Tan[x]^2]*Csc[x]^2-Sin[x]/(4*Sqrt[-4+5*Sec[x]^
+2])-5/4*(Sec[x]*Tan[x])/(-4+5*Sec[x]^2)^(3/2)+25/8*(Sec[x]^3*Tan[x])/(-4+5*Sec[x]^
+2)^(3/2)-5/8*(Sec[x]*Tan[x])/Sqrt[-4+5*Sec[x]^2]+(2*Cot[x]^2-Sin[x])/(1+5*Tan[x]^
+2)^(3/2)+2*Cot[x]*(-10*Sec[x]^2*Tan[x]*Derivative[0,0,0,0,0,1][AppellF1][-1/2,1,
+3/2,1/2,-Tan[x]^2,-5*Tan[x]^2]-2*Sec[x]^2*Tan[x]*Derivative[0,0,0,0,1,0][AppellF1][
+-1/2,1,3/2,1/2,-Tan[x]^2,-5*Tan[x]^2]) 
+]
+test436 - Integrate[(Sin[x]-2*Cot[x]^2)/(1+5*Tan[x]^2)^(3/2), x]
+PossibleZeroQ[
+-26/15*(Sec[x]^2*Tan[x])/(5-4*Sec[x]^2)^(3/2)+6/5*(Hypergeometric2F1[-1/2,1,1/2,
+1-4/5*Sec[x]^2]*Sec[x]^2*Tan[x])/(5-4*Sec[x]^2)^(3/2)-Tan[x]/(10*Sqrt[5]*Sqrt[1
+-4/5*Sec[x]^2])+6/25*(Sec[x]^2*(5/4*Cos[x]^2+ArcTanh[Sqrt[1-4/5*Sec[x]^2]]/Sqrt[
+1-4/5*Sec[x]^2])*Tan[x])/Sqrt[5-4*Sec[x]^2]+2/9*(Sec[x]^2*Tan[x])/(Sqrt[5-4*Sec[x]^
+2]*(1+1/3*(-5+4*Sec[x]^2)))+(-(3+Sin[x]^2)*Tan[x]^3)/((-2+Cos[x]^2)*(5-4*Sec[x]^
+2)^(3/2)) 
+]
+test438 - Integrate[(3+Sin[x]^2)*Tan[x]^3/((Cos[x]^2+(-1)*2)*(5-4*Sec[x]^2)^(3/2)), x]
+Power: Infinite expression 1/0 encountered.
+Power: Infinite expression 1/0 encountered.
+Power: Infinite expression 1/0 encountered.
+Power: Infinite expression 1/0 encountered.
+PossibleZeroQ[
+-Tan[x]*(1+5*Tan[x]^2)^(5/2)+7/3*(Sec[x]^2*Tan[x]*(480*ArcTanh[Sqrt[-1-5*Tan[x]^
+2]/2]-240*Sqrt[-1-5*Tan[x]^2]-20*(-1-5*Tan[x]^2)^(3/2)-3*(-1-5*Tan[x]^2)^(5/2))*(
+1+5*Tan[x]^2)^(5/2))/(-1-5*Tan[x]^2)^(7/2)+7/3*(Sec[x]^2*Tan[x]*(480*ArcTanh[Sqrt[
+-1-5*Tan[x]^2]/2]-240*Sqrt[-1-5*Tan[x]^2]-20*(-1-5*Tan[x]^2)^(3/2)-3*(-1-5*Tan[x]^
+2)^(5/2))*(1+5*Tan[x]^2)^(7/2))/(-1-5*Tan[x]^2)^(9/2)+((1+5*Tan[x]^2)^(7/2)*((
+1200*Sec[x]^2*Tan[x])/Sqrt[-1-5*Tan[x]^2]+300*Sec[x]^2*Tan[x]*Sqrt[-1-5*Tan[x]^2]+
+75*Sec[x]^2*Tan[x]*(-1-5*Tan[x]^2)^(3/2)+(-1200*Sec[x]^2*Tan[x])/(Sqrt[-1-5*Tan[x]^
+2]*(1+1/4*(1+5*Tan[x]^2)))))/(15*(-1-5*Tan[x]^2)^(7/2)) 
+]
+test440 - Integrate[(1+5*Tan[x]^2)^(5/2)*Tan[x], x]
+PossibleZeroQ[
+-Tan[x]/(1+5*Tan[x]^2)^(5/2)+5/4*(Hypergeometric2F1[-3/2,1,-1/2,1/4*(-1-5*Tan[x]^
+2)]*Sec[x]^2*Tan[x])/(1+5*Tan[x]^2)^(5/2)+5/8*(Hypergeometric2F1[-1/2,2,1/2,1/4*(
+-1-5*Tan[x]^2)]*Sec[x]^2*Tan[x])/(1+5*Tan[x]^2)^(3/2) 
+]
+test441 - Integrate[Tan[x]/(1+5*Tan[x]^2)^(5/2), x]
+PossibleZeroQ[
+-Tan[x]*(1-7*Tan[x]^2)^(2/3)+7/8*Hypergeometric2F1[1,5/3,8/3,1/8*(1-7*Tan[x]^2)]*Sec[x]^
+2*Tan[x]*(1-7*Tan[x]^2)^(2/3)+21/512*Hypergeometric2F1[2,8/3,11/3,1/8*(1-7*Tan[x]^
+2)]*Sec[x]^2*Tan[x]*(1-7*Tan[x]^2)^(5/3) 
+]
+test443 - Integrate[(1-7*Tan[x]^2)^(2/3)*Tan[x], x]
+PossibleZeroQ[
+-Cot[x]/(a^4+b^4*Csc[x]^2)^(1/4)+(-b^4*Cot[x]*Csc[x]^2*Hypergeometric2F1[3/4,1,7/
+4,1+(b^4*Csc[x]^2)/a^4])/(a^4*(a^4+b^4*Csc[x]^2)^(1/4))-4/7*(b^4*Cot[x]*Csc[x]^2*(a^
+4+b^4*Csc[x]^2)^(3/4)*Hypergeometric2F1[7/4,2,11/4,1+(b^4*Csc[x]^2)/a^4])/a^8 
+]
+test444 - Integrate[Cot[x]/(a^4+b^4*Csc[x]^2)^(1/4), x]
+PossibleZeroQ[
+-Cot[x]/(a^4-b^4*Csc[x]^2)^(1/4)+(b^4*Cot[x]*Csc[x]^2*Hypergeometric2F1[3/4,1,7/
+4,1+(-b^4*Csc[x]^2)/a^4])/(a^4*(a^4-b^4*Csc[x]^2)^(1/4))+4/7*(b^4*Cot[x]*Csc[x]^
+2*(a^4-b^4*Csc[x]^2)^(3/4)*Hypergeometric2F1[7/4,2,11/4,1+(-b^4*Csc[x]^2)/a^4])/a^
+8 
+]
+test445 - Integrate[Cot[x]/(a^4-b^4*Csc[x]^2)^(1/4), x] 
+PossibleZeroQ[
+Sec[x]^2*Tan[x]+(-Sec[x]^2*Tan[x]*((1-3*Sec[x]^2)^(1/3)*Sin[x]^2+3*Tan[x]^2))/((
+1-3*Sec[x]^2)^(5/6)*(1-Sqrt[1-3*Sec[x]^2])) 
+]
+test446 - Integrate[(3*Tan[x]^2+Sin[x]^2*(1-3*Sec[x]^2)^(1/3))/(Cos[x]^2*(1-3*Sec[x]^2)^(5/6)*(1-Sqrt[1-3*Sec[x]^2]))*Tan[x], x]
+PossibleZeroQ[
+(Sec[x]^2*(Cos[2*x]-2*Tan[x]^2))/(Tan[x]*Tan[2*x])^(3/2)+5/4*(ArcTanh[Sqrt[1-Tan[x]^
+2]]*Tan[x]*Sqrt[Tan[2*x]]*(2*Sec[2*x]^2*Tan[x]+Sec[x]^2*Tan[2*x]))/(Sqrt[2]*Sqrt[
+1-Tan[x]^2]*Sqrt[Tan[x]/(1-Tan[x]^2)]*(Tan[x]*Tan[2*x])^(3/2))+(Hypergeometric2F1[
+1,5/2,7/2,1-Tan[x]^2]*Tan[x]*(1-Tan[x]^2)^2*Sqrt[Tan[2*x]]*(2*Sec[2*x]^2*Tan[x]+Sec[x]^
+2*Tan[2*x]))/(10*Sqrt[2]*Sqrt[Tan[x]/(1-Tan[x]^2)]*(Tan[x]*Tan[2*x])^(3/2))+(Hypergeometric2F1[
+2,5/2,7/2,1-Tan[x]^2]*Tan[x]*(1-Tan[x]^2)^2*Sqrt[Tan[2*x]]*(2*Sec[2*x]^2*Tan[x]+Sec[x]^
+2*Tan[2*x]))/(20*Sqrt[2]*Sqrt[Tan[x]/(1-Tan[x]^2)]*(Tan[x]*Tan[2*x])^(3/2))+(Cot[x]*Sqrt[Tan[
+2*x]]*(-2*Sec[2*x]^2*Tan[x]-Sec[x]^2*Tan[2*x]))/(4*Sqrt[2]*Sqrt[Tan[x]/(1-Tan[x]^
+2)]*(Tan[x]*Tan[2*x])^(3/2))+(ArcTanh[Sqrt[1-Tan[x]^2]/Sqrt[2]]*Tan[x]*Sqrt[Tan[
+2*x]]*(-2*Sec[2*x]^2*Tan[x]-Sec[x]^2*Tan[2*x]))/(Sqrt[1-Tan[x]^2]*Sqrt[Tan[x]/(1-Tan[x]^
+2)]*(Tan[x]*Tan[2*x])^(3/2))+(Cot[x]*Sec[2*x]^2)/(2*Sqrt[2]*Sqrt[Tan[x]/(1-Tan[x]^
+2)]*Sqrt[Tan[2*x]]*Sqrt[Tan[x]*Tan[2*x]])-5/2*(ArcTanh[Sqrt[1-Tan[x]^2]]*Sec[2*x]^
+2*Tan[x])/(Sqrt[2]*Sqrt[1-Tan[x]^2]*Sqrt[Tan[x]/(1-Tan[x]^2)]*Sqrt[Tan[2*x]]*Sqrt[Tan[x]*Tan[
+2*x]])+(2*ArcTanh[Sqrt[1-Tan[x]^2]/Sqrt[2]]*Sec[2*x]^2*Tan[x])/(Sqrt[1-Tan[x]^2]*Sqrt[Tan[x]/(
+1-Tan[x]^2)]*Sqrt[Tan[2*x]]*Sqrt[Tan[x]*Tan[2*x]])+(-Hypergeometric2F1[1,5/2,7/2,
+1-Tan[x]^2]*Sec[2*x]^2*Tan[x]*(1-Tan[x]^2)^2)/(5*Sqrt[2]*Sqrt[Tan[x]/(1-Tan[x]^2)]*Sqrt[Tan[
+2*x]]*Sqrt[Tan[x]*Tan[2*x]])+(-Hypergeometric2F1[2,5/2,7/2,1-Tan[x]^2]*Sec[2*x]^
+2*Tan[x]*(1-Tan[x]^2)^2)/(10*Sqrt[2]*Sqrt[Tan[x]/(1-Tan[x]^2)]*Sqrt[Tan[2*x]]*Sqrt[Tan[x]*Tan[
+2*x]])+(Cot[x]*((-2*Sec[x]^2*Tan[x]^2)/(1-Tan[x]^2)^2-Sec[x]^2/(1-Tan[x]^2))*Sqrt[Tan[
+2*x]])/(4*Sqrt[2]*(Tan[x]/(1-Tan[x]^2))^(3/2)*Sqrt[Tan[x]*Tan[2*x]])+5/4*(ArcTanh[Sqrt[
+1-Tan[x]^2]]*Tan[x]*((2*Sec[x]^2*Tan[x]^2)/(1-Tan[x]^2)^2+Sec[x]^2/(1-Tan[x]^2))*Sqrt[Tan[
+2*x]])/(Sqrt[2]*Sqrt[1-Tan[x]^2]*(Tan[x]/(1-Tan[x]^2))^(3/2)*Sqrt[Tan[x]*Tan[2*x]])+(ArcTanh[Sqrt[
+1-Tan[x]^2]/Sqrt[2]]*Tan[x]*((-2*Sec[x]^2*Tan[x]^2)/(1-Tan[x]^2)^2-Sec[x]^2/(1-Tan[x]^
+2))*Sqrt[Tan[2*x]])/(Sqrt[1-Tan[x]^2]*(Tan[x]/(1-Tan[x]^2))^(3/2)*Sqrt[Tan[x]*Tan[
+2*x]])+(Hypergeometric2F1[1,5/2,7/2,1-Tan[x]^2]*Tan[x]*((2*Sec[x]^2*Tan[x]^2)/(1-Tan[x]^
+2)^2+Sec[x]^2/(1-Tan[x]^2))*(1-Tan[x]^2)^2*Sqrt[Tan[2*x]])/(10*Sqrt[2]*(Tan[x]/(
+1-Tan[x]^2))^(3/2)*Sqrt[Tan[x]*Tan[2*x]])+(Hypergeometric2F1[2,5/2,7/2,1-Tan[x]^
+2]*Tan[x]*((2*Sec[x]^2*Tan[x]^2)/(1-Tan[x]^2)^2+Sec[x]^2/(1-Tan[x]^2))*(1-Tan[x]^
+2)^2*Sqrt[Tan[2*x]])/(20*Sqrt[2]*(Tan[x]/(1-Tan[x]^2))^(3/2)*Sqrt[Tan[x]*Tan[2*x]])+(-Csc[x]^
+2*Sqrt[Tan[2*x]])/(2*Sqrt[2]*Sqrt[Tan[x]/(1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[2*x]])+2/
+5*(Sqrt[2]*Hypergeometric2F1[1,5/2,7/2,1-Tan[x]^2]*Sec[x]^2*(1-Tan[x]^2)*Tan[x]^
+2*Sqrt[Tan[2*x]])/(Sqrt[Tan[x]/(1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[2*x]])+(Sqrt[2]*Hypergeometric2F1[
+2,5/2,7/2,1-Tan[x]^2]*Sec[x]^2*(1-Tan[x]^2)*Tan[x]^2*Sqrt[Tan[2*x]])/(5*Sqrt[Tan[x]/(
+1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[2*x]])-5/2*(ArcTanh[Sqrt[1-Tan[x]^2]]*Sec[x]^2*Tan[x]^
+2*Sqrt[Tan[2*x]])/(Sqrt[2]*(1-Tan[x]^2)^(3/2)*Sqrt[Tan[x]/(1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[
+2*x]])+(2*ArcTanh[Sqrt[1-Tan[x]^2]/Sqrt[2]]*Sec[x]^2*Tan[x]^2*Sqrt[Tan[2*x]])/((
+1-Tan[x]^2)^(3/2)*Sqrt[Tan[x]/(1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[2*x]])+5/2*(Sec[x]^2*Sqrt[Tan[
+2*x]])/(Sqrt[2]*(1-Tan[x]^2)*Sqrt[Tan[x]/(1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[2*x]])+(-Sqrt[
+2]*Sec[x]^2*Tan[x]^2*Sqrt[Tan[2*x]])/((1+1/2*(-1+Tan[x]^2))*(1-Tan[x]^2)*Sqrt[Tan[x]/(
+1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[2*x]])-5/2*(ArcTanh[Sqrt[1-Tan[x]^2]]*Sec[x]^2*Sqrt[Tan[
+2*x]])/(Sqrt[2]*Sqrt[1-Tan[x]^2]*Sqrt[Tan[x]/(1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[2*x]])+(
+2*ArcTanh[Sqrt[1-Tan[x]^2]/Sqrt[2]]*Sec[x]^2*Sqrt[Tan[2*x]])/(Sqrt[1-Tan[x]^2]*Sqrt[Tan[x]/(
+1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[2*x]])+(-Hypergeometric2F1[1,5/2,7/2,1-Tan[x]^2]*Sec[x]^
+2*(1-Tan[x]^2)^2*Sqrt[Tan[2*x]])/(5*Sqrt[2]*Sqrt[Tan[x]/(1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[
+2*x]])+(-Hypergeometric2F1[2,5/2,7/2,1-Tan[x]^2]*Sec[x]^2*(1-Tan[x]^2)^2*Sqrt[Tan[
+2*x]])/(10*Sqrt[2]*Sqrt[Tan[x]/(1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[2*x]])+(Sqrt[2]*Hypergeometric2F1[
+2,7/2,9/2,1-Tan[x]^2]*Sec[x]^2*Tan[x]^2*(1-Tan[x]^2)^2*Sqrt[Tan[2*x]])/(7*Sqrt[Tan[x]/(
+1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[2*x]])+(Sqrt[2]*Hypergeometric2F1[3,7/2,9/2,1-Tan[x]^
+2]*Sec[x]^2*Tan[x]^2*(1-Tan[x]^2)^2*Sqrt[Tan[2*x]])/(7*Sqrt[Tan[x]/(1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[
+2*x]]) 
+]
+test447 - Integrate[(2*Tan[x]^2-Cos[2*x])/(Cos[x]^2*(Tan[x]*Tan[2*x])^(3/2)), x]
+PossibleZeroQ[
+(b^3*Hypergeometric2F1[-1/3,1,2/3,1+(-b^3*Cos[x]^n)/a^3]*Sin[x])/(a^3*Cos[x]^(1-n)*(a^
+3-b^3*Cos[x]^n)^(4/3))+3/2*(b^3*Hypergeometric2F1[2/3,2,5/3,1+(-b^3*Cos[x]^n)/a^
+3]*Sin[x])/(a^6*Cos[x]^(1-n)*(a^3-b^3*Cos[x]^n)^(1/3))-Tan[x]/(a^3-b^3*Cos[x]^n)^(
+4/3) 
+]
+test448 - Integrate[Tan[x]/(a^3-b^3*Cos[x]^n)^(4/3), x]
+PossibleZeroQ[
+-2*Cos[x]^8*(1+2*Cos[x]^9)^(5/6)*Hypergeometric2F1[1,11/6,17/6,1+2*Cos[x]^9]*Sin[x]
+-12/17*Cos[x]^8*(1+2*Cos[x]^9)^(11/6)*Hypergeometric2F1[2,17/6,23/6,1+2*Cos[x]^9]*Sin[x]-(
+1+2*Cos[x]^9)^(5/6)*Tan[x] 
+]
+test449 - Integrate[(1+2*Cos[x]^9)^(5/6)*Tan[x], x]
+PossibleZeroQ[
+Sec[x]^2*Tan[x]+(-Sec[x]^2*Tan[x]*(1+(1-8*Tan[x]^2)^(1/3)))/(1-8*Tan[x]^2)^(2/3) 
+]
+test451 - Integrate[(1+(1-8*Tan[x]^2)^(1/3))/(Cos[x]^2*(1-8*Tan[x]^2)^(2/3))*Tan[x], x]
+PossibleZeroQ[
+-7/8*Sin[2*x]/Cos[2*x]^(3/4)+1/2*Cos[2*x]^(1/4)*Sin[2*x]-1/8*Cos[2*x]^(5/4)*Sin[
+2*x]+(Hypergeometric2F1[1/4,1,5/4,-Cos[2*x]]*Sin[2*x])/Cos[2*x]^(3/4)-4/5*Cos[2*x]^(
+1/4)*Hypergeometric2F1[5/4,2,9/4,-Cos[2*x]]*Sin[2*x]+(-Sin[x]^6*Tan[x])/Cos[2*x]^(
+3/4) 
+]
+test455 - Integrate[Sin[x]^6*Tan[x]/Cos[2*x]^(3/4), x] 
+PossibleZeroQ[
+(ArcTanh[Sqrt[1-Tan[x]^2]/Sqrt[2]]*Cot[x]*Sqrt[1-Tan[x]^2]*Sqrt[Tan[x]/(1-Tan[x]^
+2)]*(-2*Sec[2*x]^2*Tan[x]-Sec[x]^2*Tan[2*x]))/(2*Sqrt[Tan[2*x]]*Sqrt[Tan[x]*Tan[
+2*x]])-Sqrt[Tan[x]*Tan[2*x]]+(ArcTanh[Sqrt[1-Tan[x]^2]/Sqrt[2]]*Cot[x]*Sec[2*x]^
+2*Sqrt[1-Tan[x]^2]*Sqrt[Tan[x]/(1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[2*x]])/Tan[2*x]^(3/
+2)+(ArcTanh[Sqrt[1-Tan[x]^2]/Sqrt[2]]*Cot[x]*((-2*Sec[x]^2*Tan[x]^2)/(1-Tan[x]^2)^
+2-Sec[x]^2/(1-Tan[x]^2))*Sqrt[1-Tan[x]^2]*Sqrt[Tan[x]*Tan[2*x]])/(2*Sqrt[Tan[x]/(
+1-Tan[x]^2)]*Sqrt[Tan[2*x]])+(Sec[x]^2*Sqrt[Tan[x]/(1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[
+2*x]])/(Sqrt[2]*(1+1/2*(-1+Tan[x]^2))*Sqrt[Tan[2*x]])+(ArcTanh[Sqrt[1-Tan[x]^2]/Sqrt[
+2]]*Sec[x]^2*Sqrt[Tan[x]/(1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[2*x]])/(Sqrt[1-Tan[x]^2]*Sqrt[Tan[
+2*x]])+(ArcTanh[Sqrt[1-Tan[x]^2]/Sqrt[2]]*Csc[x]^2*Sqrt[1-Tan[x]^2]*Sqrt[Tan[x]/(
+1-Tan[x]^2)]*Sqrt[Tan[x]*Tan[2*x]])/Sqrt[Tan[2*x]] 
+]
+test456 - Integrate[Sqrt[Tan[x]*Tan[2*x]], x]
+PossibleZeroQ[
+-2-(a^x-b^x)^2/(a^x*b^x)+(a^x*Log[a])/(b^x*(Log[a]-Log[b]))+(b^x*Log[a])/(a^x*(Log[a]-Log[b]))+(-a^x*Log[b])/(b^x*(Log[a]-Log[b]))+(-b^x*Log[b])/(a^x*(Log[a]-Log[b])) 
+]
+test495 - Integrate[(a^x-b^x)^2/(a^x*b^x), x]
+PossibleZeroQ[
+-(-1/E^x+E^x)^n+(-E^(2*x)*(-1/E^x+E^x)^n*n*Hypergeometric2F1[1-n,1-n/2,2-n/2,E^(
+2*x)])/((1-E^(2*x))^n*(1-n/2))+(-2*E^(2*x)*(-1/E^x+E^x)^n*Hypergeometric2F1[-n,-n/
+2,1-n/2,E^(2*x)])/(1-E^(2*x))^(1+n)+(-(E^(-x)+E^x)*Hypergeometric2F1[-n,-n/2,1-n/
+2,E^(2*x)])/((-1/E^x+E^x)^(1-n)*(1-E^(2*x))^n) 
+]
+test500 - Integrate[(E^x-1/E^x)^n, x]
+PossibleZeroQ[
+-(a^(k*x)+a^(l*x))^n+(a^((-k+l)*x)*(a^(k*x)+a^(l*x))^n*n*Hypergeometric2F1[1-n,1+(-k*n)/(k-l),
+2+(-k*n)/(k-l),-a^((-k+l)*x)])/((1+a^((-k+l)*x))^n*(1+(-k*n)/(k-l)))+(a^((-k+l)*x)*(a^(k*x)+a^(l*x))^n*(k-l)*Hypergeometric2F1[-n,(-k*n)/(k-l),
+1+(-k*n)/(k-l),-a^((-k+l)*x)])/((1+a^((-k+l)*x))^(1+n)*k)+(Hypergeometric2F1[-n,(-k*n)/(k-l),
+1+(-k*n)/(k-l),-a^((-k+l)*x)]*(a^(k*x)*k*Log[a]+a^(l*x)*l*Log[a]))/((a^(k*x)+a^(l*x))^(
+1-n)*(1+a^((-k+l)*x))^n*k*Log[a]) 
+]
+test506 - Integrate[(a^(k*x)+a^(l*x))^n, x]
+PossibleZeroQ[
+-(a^(k*x)-a^(l*x))^n+(a^((-k+l)*x)*(a^(k*x)-a^(l*x))^n*(-k+l)*n*Hypergeometric2F1[
+1-n,1+(-k*n)/(k-l),2+(-k*n)/(k-l),a^((-k+l)*x)])/((1-a^((-k+l)*x))^n*(k-l)*(1+(-k*n)/(k-l)))+(a^((-k+l)*x)*(a^(k*x)-a^(l*x))^n*(-k+l)*Hypergeometric2F1[-n,(-k*n)/(k-l),
+1+(-k*n)/(k-l),a^((-k+l)*x)])/((1-a^((-k+l)*x))^(1+n)*k)+(Hypergeometric2F1[-n,(-k*n)/(k-l),
+1+(-k*n)/(k-l),a^((-k+l)*x)]*(a^(k*x)*k*Log[a]-a^(l*x)*l*Log[a]))/((a^(k*x)-a^(l*x))^(
+1-n)*(1-a^((-k+l)*x))^n*k*Log[a]) 
+]
+test511 - Integrate[(a^(k*x)-a^(l*x))^n, x]
+PossibleZeroQ[
+-(1-2*E^(x/3))^(1/4)+2*E^(x/3)*(1-2*E^(x/3))^(1/4)*Hypergeometric2F1[1,5/4,9/4,1
+-2*E^(x/3)]+8/9*E^(x/3)*(1-2*E^(x/3))^(5/4)*Hypergeometric2F1[2,9/4,13/4,1-2*E^(x/
+3)] 
+]
+test528 - Integrate[(1-2*E^(x/3))^(1/4), x]
+PossibleZeroQ[
+-(a+b*E^(n*x))^(r/s)+(-b*E^(n*x)*(a+b*E^(n*x))^(r/s)*(1+r/s)*s*Hypergeometric2F1[
+1,1+r/s,2+r/s,1+(b*E^(n*x))/a])/(a*(r+s))+(-b*E^(n*x)*(a+b*E^(n*x))^(1+r/s)*(1+r/s)*s*Hypergeometric2F1[
+2,2+r/s,3+r/s,1+(b*E^(n*x))/a])/(a^2*(2+r/s)*(r+s)) 
+]
+test529 - Integrate[(a+b*E^(n*x))^(r/s), x]
+PossibleZeroQ[
+-(-3+E^(7*x))^(2/3)/E^(2*x)+(-7*E^(5*x)*Hypergeometric2F1[-2/3,-2/7,5/7,E^(7*x)/
+3])/(3^(1/3)*(3-E^(7*x))^(2/3)*(-3+E^(7*x))^(1/3))+(-7*E^(5*x)*(-3+E^(7*x))^(2/3)*Hypergeometric2F1[
+-2/3,-2/7,5/7,E^(7*x)/3])/(3^(1/3)*(3-E^(7*x))^(5/3))+(3^(2/3)*(-3+E^(7*x))^(2/3)*Hypergeometric2F1[
+-2/3,-2/7,5/7,E^(7*x)/3])/(E^(2*x)*(3-E^(7*x))^(2/3))-14/15*(E^(5*x)*(-3+E^(7*x))^(
+2/3)*Hypergeometric2F1[1/3,5/7,12/7,E^(7*x)/3])/(3^(1/3)*(3-E^(7*x))^(2/3)) 
+]
+test533 - Integrate[(E^(7*x)+(-1)*3)^(2/3)/E^(2*x), x]
+PossibleZeroQ[
+-E^(m*x)+4*E^(m*x)*Hypergeometric2F1[1,-I*1/2*m,1-I*1/2*m,-E^(I*2*x)]+(-4*E^(I*2*x+m*x)*Hypergeometric2F1[
+2,1-I*1/2*m,2-I*1/2*m,-E^(I*2*x)])/(1-I*1/2*m)-4*E^(m*x)*Hypergeometric2F1[2,-
+I*1/2*m,1-I*1/2*m,-E^(I*2*x)]+(8*E^(I*2*x+m*x)*Hypergeometric2F1[3,1-I*1/2*m,2-
+I*1/2*m,-E^(I*2*x)])/(1-I*1/2*m)-E^(m*x)*Tan[x]^2 
+]
+test549 - Integrate[E^(m*x)*Tan[x]^2, x]
+PossibleZeroQ[
+E^((I+m)*x)*(-I+m)*(I+m)*Hypergeometric2F1[1,1/2*(1-I*m),1/2*(3-I*m),-E^(I*2*x)]+(-
+I*2*E^(I*2*x+(I+m)*x)*(1-I*m)*(-I+m)*Hypergeometric2F1[2,1+1/2*(1-I*m),1+1/2*(3-I*m),-E^(
+I*2*x)])/(3-I*m)-1/2*E^(m*x)*m^2*Sec[x]-1/2*E^(m*x)*Sec[x]^3+1/2*E^(m*x)*Sec[x]*Tan[x]^
+2 
+]
+test551 - Integrate[E^(m*x)/Cos[x]^3, x]
+PossibleZeroQ[
+-I*2*E^((1+I)*x)*Hypergeometric2F1[1-I,2,2-I,I*E^(I*x)]+(8/5+I*4/5)*E^((1+I*2)*x)*Hypergeometric2F1[
+2-I,3,3-I,I*E^(I*x)]-E^x/(1+Sin[x]) 
+]
+test554 - Integrate[E^x/(1+Sin[x]), x]
+PossibleZeroQ[
+(E^x*Cos[x])/(1-Cos[x])+(E^x*Sin[x])/(1-Cos[x])+(-E^x*(1+Sin[x]))/(1-Cos[x])+(-E^x*Sin[x]^
+2)/(1-Cos[x])^2 
+]
+test557 - Integrate[E^x*(1+Sin[x])/(1-Cos[x]), x]
+PossibleZeroQ[
+I*2*E^x+(E^x*Cos[x])/(1+Cos[x])-I*4*E^x*Hypergeometric2F1[-I,1,1-I,-E^(I*x)]+(-2+
+I*2)*E^((1+I)*x)*Hypergeometric2F1[1-I,2,2-I,-E^(I*x)]+(E^x*(-1+Sin[x]))/(1+Cos[x])+(E^x*Sin[x])/(
+1+Cos[x])+(E^x*Sin[x]^2)/(1+Cos[x])^2 
+]
+test559 - Integrate[E^x*(1-Sin[x])/(1+Cos[x]), x]
+PossibleZeroQ[
+-I*2*E^x+I*4*E^x*Hypergeometric2F1[I,1,1+I,E^(I*1/2*(Pi-2*x))]+(2+I*2)*E^(I*1/2*(Pi
+-2*x)+x)*Hypergeometric2F1[1+I,2,2+I,E^(I*1/2*(Pi-2*x))]+(E^x*Cos[x]^2)/(1-Sin[x])^
+2+(E^x*(-1+Cos[x]))/(1-Sin[x])+(E^x*Cos[x])/(1-Sin[x])+(-E^x*Sin[x])/(1-Sin[x]) 
+]
+test560 - Integrate[E^x*(1-Cos[x])/(1-Sin[x]), x]
+PossibleZeroQ[
+-I*2*E^x+I*4*E^x*Hypergeometric2F1[I,1,1+I,-E^(I*1/2*(Pi-2*x))]+(-2-I*2)*E^(
+I*1/2*(Pi-2*x)+x)*Hypergeometric2F1[1+I,2,2+I,-E^(I*1/2*(Pi-2*x))]+(E^x*Cos[x]^2)/(
+1+Sin[x])^2+(-E^x*Cos[x])/(1+Sin[x])+(-E^x*(1+Cos[x]))/(1+Sin[x])+(E^x*Sin[x])/(
+1+Sin[x]) 
+]
+test562 - Integrate[E^x*(1+Cos[x])/(1+Sin[x]), x]
+PossibleZeroQ[
+192/50653*E^(x/2)*Cos[x]-96/1369*E^(x/2)*x*Cos[x]+24/37*E^(x/2)*x^2*Cos[x]-192/
+50653*E^(x/2)*Cos[x]^3+96/1369*E^(x/2)*x*Cos[x]^3-24/37*E^(x/2)*x^2*Cos[x]^3+12/
+1369*E^(x/2)*Sin[x]-6/37*E^(x/2)*x*Sin[x]-48/1369*E^(x/2)*Cos[x]^2*Sin[x]+24/37*E^(x/
+2)*x*Cos[x]^2*Sin[x]-192/50653*E^(x/2)*Cos[x]*Sin[x]^2+96/1369*E^(x/2)*x*Cos[x]*Sin[x]^
+2-24/37*E^(x/2)*x^2*Cos[x]*Sin[x]^2+12/1369*E^(x/2)*Sin[3*x]-6/37*E^(x/2)*x*Sin[
+3*x] 
+]
+test567 - Integrate[E^(x/2)*x^2*Cos[x]^3, x]
+test590 - Integrate[Cosh[x]*Cosh[2*x]*Cosh[3*x], x]
+PossibleZeroQ[
+-1/4+Cosh[2*x]/4+Cosh[5/2*x]^2/4-Cosh[3*x]/4-Cosh[3/2*x]*Sinh[x]*Sinh[5/2*x]+Sinh[
+5/2*x]^2/4 
+]
+test591 - Integrate[Sinh[x]*Cosh[3*x/2]*Sinh[5*x/2], x]
+PossibleZeroQ[
+(-Cosh[x]*Cosh[2*x])/Sinh[2*x]^(3/2)+Sinh[x]/Sqrt[Sinh[2*x]]-Sech[x]/(3*Sqrt[Sinh[
+2*x]]*(1-Tanh[x]))+Sech[x]/(12*Sqrt[Sinh[2*x]]*(1+Tanh[x]/2))+(-2*ArcTan[Sqrt[Tanh[x]]]*Cosh[
+2*x]*Sinh[x])/(Sinh[2*x]^(3/2)*Sqrt[Tanh[x]])+(-ArcTan[Sqrt[Tanh[x]]/Sqrt[2]]*Cosh[
+2*x]*Sinh[x])/(3*Sqrt[2]*Sinh[2*x]^(3/2)*Sqrt[Tanh[x]])+2/3*(ArcTanh[Sqrt[Tanh[x]]]*Cosh[
+2*x]*Sinh[x])/(Sinh[2*x]^(3/2)*Sqrt[Tanh[x]])+(2*ArcTan[Sqrt[Tanh[x]]]*Cosh[x])/(Sqrt[Sinh[
+2*x]]*Sqrt[Tanh[x]])+(ArcTan[Sqrt[Tanh[x]]/Sqrt[2]]*Cosh[x])/(3*Sqrt[2]*Sqrt[Sinh[
+2*x]]*Sqrt[Tanh[x]])-2/3*(ArcTanh[Sqrt[Tanh[x]]]*Cosh[x])/(Sqrt[Sinh[2*x]]*Sqrt[Tanh[x]])+(-ArcTan[Sqrt[Tanh[x]]]*Sech[x])/(Sqrt[Sinh[
+2*x]]*Sqrt[Tanh[x]])+(-ArcTan[Sqrt[Tanh[x]]/Sqrt[2]]*Sech[x])/(6*Sqrt[2]*Sqrt[Sinh[
+2*x]]*Sqrt[Tanh[x]])+(ArcTanh[Sqrt[Tanh[x]]]*Sech[x])/(3*Sqrt[Sinh[2*x]]*Sqrt[Tanh[x]])+(Cosh[x]*(Cosh[
+2*x]-Tanh[x]))/(Sqrt[Sinh[2*x]]*(Sinh[x]^2+Sinh[2*x]))+Sech[x]/(Sqrt[Sinh[2*x]]*(
+1+Tanh[x])) 
+]
+test592 - Integrate[(Tanh[x]-Cosh[2*x])*Cosh[x]/((Sinh[2*x]+Sinh[x]^2)*Sqrt[Sinh[2*x]]), x] 
+PossibleZeroQ[
+-Cos[x]/(3*(1+Cos[x])^2)+2/3*Cos[x]/(1+Cos[x])-4/3*(Cos[x]*Log[Sin[x]])/(1+Cos[x])^
+2+2/3*(Cos[x]*Log[Sin[x]])/(1+Cos[x])-2/3*(Log[Sin[x]]*Sin[x]^2)/(1+Cos[x])^3+2/
+3*(Log[Sin[x]]*Sin[x]^2)/(1+Cos[x])^2 
+]
+test644 - Integrate[Cos[x]*Log[Sin[x]]/(1+Cos[x])^2, x]
+test698 - Integrate[ArcTan[x-a]/(x+a), x] 
+PossibleZeroQ[
+1/Sqrt[10]-1/(2+3*Cos[x]^2)-(((-1+Sqrt[5/2])*Cos[x]^2)/(1+(-1+Sqrt[5/2])*Cos[x]^
+2)+(2*(1-Sqrt[5/2])^2*Cos[x]^2*Sin[x]^2)/(1+(-1+Sqrt[5/2])*Cos[x]^2)^2+((1-Sqrt[
+5/2])*Sin[x]^2)/(1+(-1+Sqrt[5/2])*Cos[x]^2))/(Sqrt[10]*(1+((1-Sqrt[5/2])^2*Cos[x]^
+2*Sin[x]^2)/(1+(-1+Sqrt[5/2])*Cos[x]^2)^2)) 
+]
+test61 - Integrate[1/(2+3*Cos[x]^2), x]
+PossibleZeroQ[
+2*Cos[x]*Sin[x]*(-4+a^2+4*Sin[x]^2)^(3/4)-(a^2-4*Cos[x]^2)^(3/4)*Sin[2*x] 
+]
+test64 - Integrate[(a^2-4*Cos[x]^2)^(3/4)*Sin[2*x], x]
+PossibleZeroQ[
+-1/Sqrt[-1+a^(2*x)]-Sqrt[-1+a^(2*x)]/(1-a^(2*x))+(a^(2*x)*ArcTanh[Sqrt[1-a^(2*x)]])/(Sqrt[
+1-a^(2*x)]*Sqrt[-1+a^(2*x)])+(a^(2*x)*Sqrt[-1+a^(2*x)]*ArcTanh[Sqrt[1-a^(2*x)]])/(
+1-a^(2*x))^(3/2) 
+]
+test66 - Integrate[1/Sqrt[a^(2*x)+(-1)*1], x]
+
